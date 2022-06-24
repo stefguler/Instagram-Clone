@@ -208,6 +208,10 @@ footer {
     margin: 0.3rem 0.5rem;
 }
 
+.navigation-container li a{
+    color:#8e8e8e;
+}
+
 .navigation-container select {
     border: none;
     color: #8e8e8e;
