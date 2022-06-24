@@ -7,10 +7,17 @@
 
 /*general */
 body {
-    color: rgba(var(--i1d,38,38,38),1);
+    
     font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 18px;
+    background-color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
 }
 
 main {
@@ -23,8 +30,27 @@ main {
     padding: 0 4rem;
 }
 
-.app-img-background-container {
-    background-image: url('/static-instagram-clone/images/mobile_background_img.png');
+.app-img-front-container {
+    background-image: url("/images/mobile_background_img.png");
+
+}
+
+.app-img-front-container .app-img-1{
+    position: absolute;
+    right: 65%;
+    transform: translateY(+5%);
+    
+}
+
+.app-img-front-container .app-img-2{
+    position: absolute;
+    right: 67%;
+    transform: translateY(+5%);
+}
+.app-img-front-container .app-img-3{
+    position: absolute;
+    right: 69%;
+    transform: translateY(+5%);
 }
 
 .login-input-container {
@@ -32,13 +58,13 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    border: solid 1px rgba(219,219,219);
-    padding: 6rem;
+    border: solid 0.1rem rgba(219,219,219);
+    padding-bottom: 1rem;
     
 }
 
 .login-input-container .instagram-slogan {
-     margin-bottom: 2rem;
+     padding: 2rem
 }
 
 .login-input-container ul li {
@@ -48,14 +74,24 @@ main {
 }
 
 .login-input-container input {
-    width: 15rem;
     padding: 9px 0 7px 8px;
+    margin:  0 1rem;
     overflow: hidden;
     text-overflow: ellipsis;
+    background-color: #fafafa;
+    border-radius: 0.2rem;
+    border: 0.1rem solid rgba(219,219,219);
+}
+
+.login-input-container button {
+    padding: 9px 0 7px 8px;
+    margin: 0 1rem;
+    border: none;
+    color: #385185;
+    background-color: #fff;;
 }
 
 .login-input-container .login-button {
-    width: 15rem;
     padding: 9px 0 7px 8px;
     background-color: rgba(0,149,246,.3);
     opacity: 1;
@@ -65,8 +101,135 @@ main {
     font-weight: bold;
 }
 
-.login-input-container #facebook-img {
+.login-input-container .facebook-img {
     width: 1rem;
-    padding: 0.1rem;
     align-content: center;
+    padding-right: 0.1rem;
+    transform: translateY(+15%);
   }
+
+  .login-input-container .or-separator {
+    width: 15rem;
+    display: flex;
+    margin: 10px 40px 18px;
+  }
+
+  .login-input-container .line-separator {
+    margin: 0 1rem 0 0;
+    color: #8e8e8e;
+
+  }
+  
+  .login-input-container span {
+       margin: 0 1rem 0 0;
+       color: #8e8e8e;
+       font-size: 13px;
+       font-weight: 600;
+
+  }
+
+  .login-input-container .login-facebook-container a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 12px;
+    text-align: center;
+}
+
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: solid 0.1rem rgba(219,219,219);
+    padding: 15px;
+    margin-top: 1rem;
+}
+
+.signup-container a{
+    text-decoration: none;
+    color: #0095f6;
+}
+
+.get-the-app-container {
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.appstore-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+
+.get-the-app-container span{
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 15px;
+}
+
+.appstore-container img{
+    height: 40px;
+    margin: 0.2rem 0.3rem;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.navigation-container  {
+    color: #8e8e8e;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: end;
+    margin: 0 3rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    bottom: 0;
+}
+
+.navigation-container ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.navigation-container li {
+    margin: 0.3rem 0.5rem;
+}
+
+.navigation-container select {
+    border: none;
+    color: #8e8e8e;
+    background-color: transparent;
+}
+
+.navigation-bar3-container {
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
